@@ -1,0 +1,68 @@
+\documentclass[12pt,twoside,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{float}
+
+\usepackage{url}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
+\usepackage[authoryear,square]{natbib}
+\bibliographystyle{dinat}
+
+\newcommand{\papertitle}{Observations on Almost OU Tangles}
+\newcommand{\paperauthor}{Albert \v Silvans}
+
+%\usepackage[a4paper]{geometry}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+
+
+\usepackage{multirow}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[LE,RO]{}
+\fancyhead[LO,RE]{\rightmark}
+\fancyfoot{}
+\fancyfoot[LO, RE] {\thepage}
+
+\title{\papertitle}
+\author{\paperauthor}
+\date{\today}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+\usepackage{cleveref}
+\usepackage{enumitem}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+
+\usepackage{pdfpages}
+
+\begin{document}
+
+\includepdf{bachelor-project-front-page-thesis.pdf}
+\null\thispagestyle{empty}\newpage
+\tableofcontents 				\newpage
+\input{introduction.tex}  		\newpage
+\input{tangles.tex}				
+\input{outanglediagrams.tex}	
+\input{drawing.tex}				
+\input{incidence.tex}			\newpage
+\input{further_work.tex}		\newpage
+\bibliography{references.bib}
+\includepdf[pages=-]{Observations.pdf}
+
+\end{document}

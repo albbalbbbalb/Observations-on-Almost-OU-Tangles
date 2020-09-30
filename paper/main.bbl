@@ -1,0 +1,39 @@
+\begin{thebibliography}{5}
+% this bibliography was produced with the style dinat.bst v2.5
+\makeatletter
+\newcommand{\dinatlabel}[1]%
+{\ifNAT@numbers\else\NAT@biblabelnum{#1}\hspace{2\labelsep}\fi}
+\makeatother
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[observations()]{observations}
+\dinatlabel{observations } :
+\newblock \emph{{Observations on Almost OU Tangles (Repository)}}. --
+\newblock URL
+  \url{https://github.com/albbalbbbalb/Observations-on-Almost-OU-tangles/upload/master}
+
+\bibitem[rolfsen()]{rolfsen}
+\dinatlabel{rolfsen } :
+\newblock \emph{{The Rolfsen Knot Table}}. --
+\newblock URL \url{http://katlas.math.toronto.edu/wiki/The_Rolfsen_Knot_Table}
+
+\bibitem[Adams(1994)]{adams_1994}
+\dinatlabel{Adams 1994} \textsc{Adams}, Colin:
+\newblock \emph{Knot Book}.
+\newblock W.H. Freeman, 1994
+
+\bibitem[Bar-Natan u.\,a.(2020)Bar-Natan, Dancso und van~der
+  Veen]{barnatan2020tangles}
+\dinatlabel{Bar-Natan u.\,a. 2020} \textsc{Bar-Natan}, Dror~; \textsc{Dancso},
+  Zsuzsanna~; \textsc{Veen}, Roland van~der:
+\newblock \emph{Over then Under Tangles}.
+\newblock 2020
+
+\bibitem[Lickorish(1997)]{lickorish_1997}
+\dinatlabel{Lickorish 1997} \textsc{Lickorish}, W.B.~R.:
+\newblock \emph{Graduate Texts in Mathematics}. Bd. 175: \emph{An Introduction
+  to Knot Theory}.
+\newblock New York NY~: Springer Verlag, 1997
+
+\end{thebibliography}

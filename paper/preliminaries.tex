@@ -1,0 +1,55 @@
+\section{Preliminaries}
+
+\subsection{The Alexander Matrix and Polynomial}
+
+Typically, when working with tangles, topologists aim to summarize information about a diagram and extract from this information something that does not change over their isotopic diagrams. In other words, topologists take a diagram of a tangle, and extract an invariant, which would be the same if they chose any other equivalent diagram. 
+
+In our work however, we focus not on a single diagram but on a sequence of diagrams. So invariants of tangles are too strong in this case, i.e. if we compute an invariant for each diagram in the sequence, we would not learn anything new, since each diagram produces the same invariant. So it makes sense to use something that is almost an invariant but not quite.
+
+The Alexander polynomial is a known invariant on knots and tangles, and it can help us indirectly with our sequences of diagrams. We find in \citep{armstrong_1983} a rudimentary algorithm for producing the Alexander polynomial from any diagram, which can be summarized as
+\begin{align*}
+\text{diagram with } n \text{ crossings}
+  &\xrightarrow{\text{procedure}} \text{Alex. Matrix } \in M(n,\mathbb Z[t,t^{-1}])\\
+  &\xrightarrow{\det}\text{Alex. Poly. }\in \mathbb Z[t,t^{-1}],
+\end{align*}
+that we begin with a diagram, then by some procedure we collect information about the crossings into a matrix, and then take the determinant of the matrix to retrieve the Alexander polynomial. The matrix still retains some positional information which when we care only about distinguishing tangles, we get rid of by taking the determinant. In our case we do care about the positional information, so it makes sense to keep the matrix structure.
+
+The algorithm for constructing the Alexander matrix from \citep{armstrong_1983} is described for knots. We did not define knots here, though adapting the algorithm to our tangles is easy: simply connect the two ends on the boundary of the tangle. We provide the algorithm below with an illustration
+
+\begin{enumerate}
+\item Label the over crossings,
+\item For each crossing designate a column in the Alexander matrix,
+\item 
+\end{enumerate}
+
+%we have an intermediate step with a Alexander Matrix, which still retains the structural properties of the original diagram, and unlike the polynomial which ``forgets" about the particular diagram, the matrix does depend on the diagram, and gives us enough information to distinguish knots in the sequence. There are also natural ways to extend the topology and metric of the underlying ring to spaces of matrices, though Alexander polynomials are treated using the ring of finite Laurent polynomials with interger coefficients $\mathbb Z[t,t^{-1}]$, which carry an algebraic meaning in this context, so we should first determine a topology on this ring. 
+%
+%Let $K_1$ be a knot diagram with $n$ crossings, by the above mentioned procedure, the knot diagram $K_1$ yields a matrix in $M(n,\mathbb Z[t,t^{-1}])$. As we apply the OU algorithm to $K_1$, we obtain a sequence $(K_m)$, $m\in\mathbb N$ of knot diagrams, we notice that each glide move adds 2 more crossings to the knot diagram, so the number of crossings grows without bound, and is infinite in the limit. This implies that the dimension of the matrices in the Alexander matrix sequence also grows without bound, and in the limit we have infinite dimensional matrices. We have to examine what those look like, and if they have any nice structure.
+%
+%Working with a sequence of matrices of different dimension poses the question on how to define a distance function between them, since we tyically work with matrices of the same dimension. Here are a few ideas:
+%
+%\begin{enumerate}
+%\item For each $m\in\mathbb N$, we may identify the Alex. matrix $A$ of $K_m$ with an infinite dimensional one as follows:
+%\begin{equation}
+%A \mapsto \left[\begin{array}{ccc}
+%A & 0 & \hdots\\
+%0 & 0 & \hdots\\
+%\vdots & \vdots & \ddots
+%\end{array}\right],
+%\end{equation} 
+%then we only need to deal with matrices of the same dimension. In practice when comparing the matrices of $K_m,K_{m+1}$, we can simply pad $K_m$ with zeros on the right and bottom to match the dimensions of $K_{m+1}$.
+%\item Instead of padding a matrix, we can instead identify each matrix of $K_m$ with an element of 
+%\begin{equation}
+%M(\mathbb N,\mathbb Z[t,t^{-1}]) = \prod_{n\in\mathbb N}M(n,\mathbb Z[t,t^{-1}]), (does\ this\ notation\ make\ sense?)
+%\end{equation}
+%an infinite product of the spaces of matrices, so then the square matrix $A$ with dimensions $m$ goes to $(0,\dots,0,A,0,\dots)$, with $m-1$ zeros preceeding $A$ and infinitely many zeros after it. We can then nicely define a norm function (it seems ) on $M(\mathbb N,\mathbb Z[t,t^{-1}])$, for example, if $A=(A_n),B=(B_n)$
+%\begin{equation}
+%\|A-B\|_* = \sum_{n\in\mathbb N}\|A_n-B_n\|_n,
+%\end{equation}
+%where the $\|\cdot\|_n$ norms are some entrywise norms on matrices.
+%\item Some wiki searching revealed there might be something fun with affine varieties and the Zariski topology, though I did not look into it thoroughly.
+%\end{enumerate}
+
+
+
+

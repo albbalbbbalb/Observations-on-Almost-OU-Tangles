@@ -1,0 +1,17 @@
+\section{Conclusions and Further work}
+
+\subsection{What we did}
+
+From \Cref{fig:trefR1examples} and \Cref{fig:varioustangleexamples} we see that we indeed produce periodic structures with differences from tangle to tangle, and between different starting tangle diagrams. We did not however conclude how these patterns arise. 
+
+We only considered a few example diagrams for the trefoil tangle, perhaps for different tangles we will see different results. 
+
+Another option is to consider Knots instead of Tangles, so that the glide move may wrap around the starting and end strands. 
+
+\subsection{Convergence}
+
+We mentioned a distinction between tame and wild diagrams, yet never suggested any sort of convergence of tame diagrams to wild ones. As the OU algorithm progresses the incidence matrix grows without bound, in such a way producing an infinite structure. If we consider the sequence of incidence matrices as submatrices of infinite matrices, and pick appropriate values for our symbolic R,G,B,W, we may define convergence, and see if it produces any meaningful results.
+
+\subsection{Code and accumulated data}
+
+For computations and to produce the images (the matrices, and the blue tangle diagrams) we used the \texttt{SageMath} package and its respective Knot Theory module. We export the code after the references. We have precomputed and compiled a large body of data, and stored it in a convenient place \citep{observations}. Specifically, videos in \texttt{.avi} format of sequences of incidence matrices for tangles corresponding to knots in \citep{rolfsen} (we used the Oriented Gauss Code as given by each knot).

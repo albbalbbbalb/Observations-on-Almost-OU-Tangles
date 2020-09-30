@@ -1,0 +1,17 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{4}%
+\contentsline {section}{\numberline {2}Tangles}{5}%
+\contentsline {subsection}{\numberline {2.1}Tangle diagrams}{5}%
+\contentsline {subsection}{\numberline {2.2}Reidermeister moves, Tangles, the Tame and Wild}{6}%
+\contentsline {subsection}{\numberline {2.3}Oriented Gauss notation, OU diagrams}{6}%
+\contentsline {section}{\numberline {3}Reiteration: OU tangle diagrams}{8}%
+\contentsline {subsection}{\numberline {3.1}The Glide move}{8}%
+\contentsline {subsection}{\numberline {3.2}OU Algorithm}{9}%
+\contentsline {subsection}{\numberline {3.3}Acyclic Diagrams}{9}%
+\contentsline {subsection}{\numberline {3.4}Retrospect and further considerations}{10}%
+\contentsline {section}{\numberline {4}The ``Scanning" tangle Drawing Algorithm}{11}%
+\contentsline {section}{\numberline {5}Incidence matrices}{12}%
+\contentsline {section}{\numberline {6}Conclusions and Further work}{16}%
+\contentsline {subsection}{\numberline {6.1}What we did}{16}%
+\contentsline {subsection}{\numberline {6.2}Convergence}{16}%
+\contentsline {subsection}{\numberline {6.3}Code and accumulated data}{16}%
